@@ -7,15 +7,16 @@
 3. Подключить файл: using FreeAI;
 4. Использовать нужный класс.
 # Примеры:
-## Генерация текста:  
-```var FreeGPTAns = await FreeGPT.ASK("Как дела?");
-Console.WriteLine(FreeGPTAns); //Все отлично, спасибо! Как я могу помочь вам сегодня? ```  
+## Генерация текста:   
+var FreeGPTAns = await FreeGPT.ASK("Как дела?");
+Console.WriteLine(FreeGPTAns); //Все отлично, спасибо! Как я могу помочь вам сегодня?
+
 ## Генерация картинок:  
-```var PolinationsAns = await Pollinations.Generate("Красивая природа");
-Console.WriteLine(PolinationsAns); //ans: img\63f21636-f813-4dd1-8b71-f4ec2f130f79.png```  
+var PolinationsAns = await Pollinations.Generate("Красивая природа");
+Console.WriteLine(PolinationsAns); //ans: img\63f21636-f813-4dd1-8b71-f4ec2f130f79.png 
 
 Аргументы:
--prompt(обязательно): Текстовое описание изображения, которое вы хотите создать.  
+- prompt(обязательно): Текстовое описание изображения, которое вы хотите создать.  
 - model(необязательно): Модель, используемая для генерации. Варианты: «флюс» или «турбо». По умолчанию: «турбо»  
 - seed(опционально): Seed для воспроизводимых результатов. По умолчанию: случайный  
 - width(необязательный): Ширина сгенерированного изображения. По умолчанию: 1024  
@@ -35,14 +36,14 @@ This project makes it easy to communicate with GPT-3.5 Turbo, as well as generat
 4. Use the appropriate class.
 # Examples:
 ## Text generation:  
-```var FreeGPTAns = await FreeGPT.ASK("How are you?");
-Console.WriteLine(FreeGPTAns); //Everything is fine, thanks! How can I help you today? ```  
+var FreeGPTAns = await FreeGPT.ASK("How are you?");
+Console.WriteLine(FreeGPTAns); //Everything is fine, thanks! How can I help you today?  
 ## Image generation:   
-```var PolinationsAns = await Pollinations.Generate("Beautiful nature");
-Console.WriteLine(PolinationsAns); //ans: img\63f21636-f813-4dd1-8b71-f4ec2f130f79.png```  
+var PolinationsAns = await Pollinations.Generate("Beautiful nature");
+Console.WriteLine(PolinationsAns); //ans: img\63f21636-f813-4dd1-8b71-f4ec2f130f79.png
 
 Arguments:
--prompt(required): A text description of the image you want to create.  
+- prompt(required): A text description of the image you want to create.  
 - model(optional): The model used for generation. Options: "flux" or "turbo". Default: "turbo"  
 - seed(optional): Seed for reproducible results. Default: random  
 - width(optional): The width of the generated image. Default: 1024  
